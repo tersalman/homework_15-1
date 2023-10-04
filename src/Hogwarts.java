@@ -1,4 +1,4 @@
-public class Hogwarts {
+public  class Hogwarts {
     private final String name;
     private final String surname;
     private final int witchcraft;

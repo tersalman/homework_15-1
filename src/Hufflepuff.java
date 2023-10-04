@@ -1,24 +1,26 @@
 public class Hufflepuff extends Hogwarts{
-    int a;
-    int b;
-    int c;
+    private final int hardworking;
+    private final int loyal;
+    private final int honest;
 
-    public Hufflepuff(String name, String surname, int witchcraft, int teleport, int a, int b, int c) {
+    public Hufflepuff(String name, String surname, int witchcraft, int teleport, int hardworking, int loyal, int honest) {
         super(name, surname, witchcraft, teleport);
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        this.hardworking = hardworking;
+        this.loyal = loyal;
+        this.honest = honest;
     }
 
-    public int getA() {
-        return a;
+    public int getHardworking() {
+        return hardworking;
     }
 
-    public int getB() {
-        return b;
+    public int getLoyal() {
+        return loyal;
     }
 
-    public int getC() {
-        return c;
+    public int getHonest() {
+        return honest;
     }
+
+
 }

@@ -1,25 +1,25 @@
 public class Griffindor extends Hogwarts {
 
-    int a;
-    int b;
-    int c;
+    private final int nobility;
+    private final int honor;
+    private final int courage;
 
-    public Griffindor(String name, String surname, int witchcraft, int teleport, int a, int b, int c) {
+    public Griffindor(String name, String surname, int witchcraft, int teleport, int nobility, int honor, int courage) {
         super(name, surname, witchcraft, teleport);
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        this.nobility = nobility;
+        this.honor = honor;
+        this.courage = courage;
     }
 
-    public int getA() {
-        return a;
+    public int getNobility() {
+        return nobility;
     }
 
-    public int getB() {
-        return b;
+    public int getHonor() {
+        return honor;
     }
 
-    public int getC() {
-        return c;
+    public int getCourage() {
+        return courage;
     }
 }

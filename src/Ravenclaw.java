@@ -1,24 +1,30 @@
 public class Ravenclaw extends Hogwarts{
-    int a;
-    int b;
-    int c;
+    private final int smart;
+    private final int wise;
+    private final int witty;
 
-    public Ravenclaw(String name, String surname, int witchcraft, int teleport, int a, int b, int c) {
+    private int creativity;
+
+    public Ravenclaw(String name, String surname, int witchcraft, int teleport, int smart, int wise, int witty, int creativity) {
         super(name, surname, witchcraft, teleport);
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        this.smart = smart;
+        this.wise = wise;
+        this.witty = witty;
     }
 
-    public int getA() {
-        return a;
+    public int getSmart() {
+        return smart;
     }
 
-    public int getB() {
-        return b;
+    public int getWise() {
+        return wise;
     }
 
-    public int getC() {
-        return c;
+    public int getWitty() {
+        return witty;
+    }
+
+    public int getCreativity() {
+        return creativity;
     }
 }

@@ -1,31 +1,31 @@
 public class Slytherin extends Hogwarts{
-    int a;
-    int b;
-    int c;
+    private final int cunning;
+    private final int determenation;
+    private final int ambition;
 
-    int d;
+    private final int lustingForPower;
 
-    public Slytherin(String name, String surname, int witchcraft, int teleport, int a, int b, int c, int d) {
+    public Slytherin(String name, String surname, int witchcraft, int teleport, int cunning, int determenation, int ambition, int lustingForPower) {
         super(name, surname, witchcraft, teleport);
-        this.a = a;
-        this.b = b;
-        this.c = c;
-        this.d = d;
+        this.cunning = cunning;
+        this.determenation = determenation;
+        this.ambition = ambition;
+        this.lustingForPower = lustingForPower;
     }
 
-    public int getA() {
-        return a;
+    public int getCunning() {
+        return cunning;
     }
 
-    public int getB() {
-        return b;
+    public int getDetermenation() {
+        return determenation;
     }
 
-    public int getC() {
-        return c;
+    public int getAmbition() {
+        return ambition;
     }
 
-    public int getD() {
-        return d;
+    public int getLustingForPower() {
+        return lustingForPower;
     }
 }
