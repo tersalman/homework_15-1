@@ -1,24 +1,54 @@
 public class Ravenclaw extends Hogwarts{
-    int a;
-    int b;
-    int c;
+    protected final int smart;
+    protected final int wise;
+    protected final int witty;
 
-    public Ravenclaw(String name, String surname, int witchcraft, int teleport, int a, int b, int c) {
+    protected int creativity;
+
+    public Ravenclaw(String name, String surname, int witchcraft, int teleport, int smart, int wise, int witty, int creativity) {
         super(name, surname, witchcraft, teleport);
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        this.smart = smart;
+        this.wise = wise;
+        this.witty = witty;
     }
 
-    public int getA() {
-        return a;
+    public int getSmart() {
+        return smart;
     }
 
-    public int getB() {
-        return b;
+    public int getWise() {
+        return wise;
     }
 
-    public int getC() {
-        return c;
+    public int getWitty() {
+        return witty;
+    }
+
+    public int getCreativity() {
+        return creativity;
+    }
+
+    @Override
+    public String toString() {
+        return "Ravenclaw{" +
+                "smart=" + smart +
+                ", wise=" + wise +
+                ", witty=" + witty +
+                ", creativity=" + creativity +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", witchcraft=" + witchcraft +
+                ", teleport=" + teleport +
+                '}';
+    }
+
+    public static void comparingTheStudent(Ravenclaw per, Ravenclaw per1) {
+        int a =per.smart + per.wise + per.witty + per.creativity;
+        int b =per1.smart + per1.wise + per1.witty + per1.creativity;
+        if (a > b) {
+            System.out.println(per.getName() + " лучший Когтевранец, чем "+ per1.getName());
+        }else {
+            System.out.println(per1.getName() + " лучший Когтевранец, чем "+ per.getName());
+        }
     }
 }
